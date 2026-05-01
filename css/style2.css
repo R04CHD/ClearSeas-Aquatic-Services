@@ -35,6 +35,32 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.05);
     transition: var(--transition);
 }
+/* Logo Image Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.nav-logo-img {
+    height: 60px; /* Adjust this height to fit your nav bar perfectly */
+    width: auto;  /* Maintains aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect for the logo */
+.logo-container:hover .nav-logo-img {
+    transform: scale(1.05);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .nav-logo-img {
+        height: 45px; /* Slightly smaller on mobile to save space */
+    }
+}
 
 .glass-nav nav { display: flex; justify-content: space-between; align-items: center; }
 
